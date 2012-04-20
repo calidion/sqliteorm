@@ -1,7 +1,7 @@
-ORMnomnom
+SQLiteORM
 =========
 
-ORMnomnom is designed to be a database-agnostic ORM that interfaces nicely with various templating libraries
+SQLiteORM is designed to be a database-agnostic ORM that interfaces nicely with various templating libraries
 and existing JavaScript code, with an eye towards being beautiful to read and write code for using CoffeeScript.
 
 The API design is largely borrowed from [Django's ORM](https://docs.djangoproject.com/en/1.3/topics/db/models/); while
@@ -20,7 +20,7 @@ of a model may only be set within a namespace.
 Let's take a look at what the average `models.js` file might look like:
 
 ````javascript
-var models = require('ormnomnom').models;
+var models = require('sqliteorm').models;
 
 exports.ns = 
 models.namespace('blog', function(ns) {
@@ -141,10 +141,10 @@ Post.objects.get({title:'something'})(function(err, post) {
 
 // creation is pretty easy as well:
 var my_post = Post.objects.create({
-    'title':'Introducing ORMnomnom',
-    'slug':'introducing-ormnomnom',
+    'title':'Introducing SQLiteORM',
+    'slug':'introducing-sqliteorm',
     'pub_date':new Date(),
-    'description':'ORMNOMNOM'
+    'description':'SQLiteORM'
 });
 
 my_post.on('data', function(post) {
@@ -153,10 +153,10 @@ my_post.on('data', function(post) {
 
 // you may also use this format:
 var post = new Post({
-    'title':'Introducing ORMnomnom',
-    'slug':'introducing-ormnomnom',
+    'title':'Introducing SQLiteORM',
+    'slug':'introducing-sqliteorm',
     'pub_date':new Date(),
-    'description':'ORMNOMNOM'
+    'description':'SQLiteORM'
 });
 
 post.save().on('data', function(post) {
@@ -169,10 +169,10 @@ section = Section.objects.create({
     'content':'whoa',
     'ordering':0,
     'post':Post.objects.create({
-        'title':'Introducing ORMnomnom',
-        'slug':'introducing-ormnomnom',
+        'title':'Introducing SQLiteORM',
+        'slug':'introducing-sqliteorm',
         'pub_date':new Date(),
-        'description':'ORMNOMNOM'
+        'description':'SQLiteORM'
     })
 });
 

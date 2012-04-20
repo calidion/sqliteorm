@@ -1,7 +1,8 @@
 {
-    "name": "ormnomnom",
-    "version":"0.0.8",
+    "name": "sqliteorm",
+    "version":"0.0.1",
     "description": "Another ORM for Node, supporting sqlite and postgres",
+    "repository": "git@github.com:calidion/ormnomnom.git",
     "keywords": [ 
         "node-pg",
         "sqlite",
@@ -10,7 +11,7 @@
     "dependencies" : {
         "coffee-script" : "X.X.X"
     },
-    "author":"Chris Dickinson",
+    "author":"Chris Dickinson, Calidion",
     "directories":{"lib":"./lib"},
     "license": [
         "New BSD License"
