@@ -2,7 +2,7 @@
     "name": "sqliteorm",
     "version":"0.0.1",
     "description": "Another ORM for Node, supporting sqlite and postgres",
-    "repository": "git@github.com:calidion/ormnomnom.git",
+    "repository": "git@github.com:calidion/sqliteorm.git",
     "keywords": [ 
         "node-pg",
         "sqlite",
